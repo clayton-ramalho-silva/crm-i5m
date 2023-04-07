@@ -18,6 +18,6 @@ Route::middleware([
     })->name('dashboard');
 
     Route::group(['prefix' => 'painel', 'as' => 'painel.'], function(){
-        Route::get('/', PainelIndex::class);
+        Route::get('/', PainelIndex::class)->name('painel');
     });
 });
